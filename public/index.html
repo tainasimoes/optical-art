@@ -27,8 +27,8 @@
     <header id="header">
       <a href="https://tainasimoes.dev/">Tainá Simões</a>
       <nav>
-        <button class="openModal">Sobre</button>
-        <a href="#experiments">Experimentos</a>
+        <!-- <button class="openModal">Sobre</button> -->
+        <a href="#contrast">Experimentos</a>
       </nav>
     </header>
   
@@ -47,7 +47,7 @@
     </footer>
   </main>
 
-  <div id="modal">
+  <!-- <div id="modal">
     <button class="closeModal">+</button>
     <h2>Arte Óptica</h2>
     <ul>
@@ -58,241 +58,501 @@
     <p>Me formei na Escola de Belas Artes da UFRJ em 2013 e trabalho com midias digitais desde 2012. Fui professora no projeto Escola HTML, onde aprendi e ensinei sobre programação, arte e a cultura da gambiarra.</p>
     <p>Atualmente, sou sócia e programadora na Grama, estúdio focado em desenvolvimento criativo. Meu maior interesse profissional é em usar novas mídias e tecnologias para o desenvolvimento urbano e comunitário, principalmente em projetos onde eu possa dar mais voz e protagonismo a mulheres pretas! 👊🏾</p>
     <p>Quer conversar? <a href="mailto:taina@grama.cc" target="_blank" rel="noopener noreferrer">taina@grama.cc</a></p>
-  </div>
+  </div> -->
 
   <div id="experiments">
     <section class="main">
-      <!-- <button class="closeExperiments">+</button> -->
       <h2>Experimentos</h2>
 
-      <p>Contraste</p>
-      <p>Formas</p>
-      <p>Desenho - Volume e profundidade</p>
-      <p>Movimento</p>
-      <p>Refêrencias</p>
-
-
-
-      <ul class="grid">
-
-        <li class="op-draw">
-          <div class="thumb">
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle3"></div>
-          </div>
-          <p class="legend">legenda - https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient()</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-
-        <li class="op-circles">
-          <div class="thumb">
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-          </div>
-          <p class="legend">legenda - https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient()</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-
-        <li class="op-circles-draw">
-          <div class="thumb">
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle3"></div>
-            <div class="circle circle4"></div>
-            <div class="circle circle5"></div>
-            <div class="circle circle6"></div>
-            <div class="circle circle7"></div>
-            <div class="circle circle8"></div>
-
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-
-            <div class="circle circle1"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-            <div class="circle circle2"></div>
-          </div>
-          <p class="legend">legenda - https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient()</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-
-
-        
-        <li>
-          <div class="thumb">
-            <div class="op-square">
-              <svg viewbox="0 0 200 200">
-                <rect width="120" height="120" x="40" y="40"  transform="rotate(0)" transform-origin="center" fill="black">
-                  <!-- <animateTransform 
-                    attributeName="transform"
-                    type="rotate"
-                    from="0" to="200"
-                    dur="15s"
-                    begin="0s"
-                    fill="freeze"
-                    repeatCount="indefinite"
-                    values="-200; 200; -200"
-                  /> -->
-                </rect>
-
-                <rect width="100" height="100" x="50" y="50"  transform="rotate(0)" transform-origin="center" fill="white">
-                  <!-- <animateTransform 
-                    attributeName="transform"
-                    type="rotate"
-                    from="0" to="180"
-                    dur="15s"
-                    begin=".1s"
-                    fill="freeze"
-                    repeatCount="indefinite"
-                    values="-180; 180; -180"
-                    /> -->
-                </rect>
-
-                <rect width="80" height="80" x="60" y="60"  transform="rotate(0)" transform-origin="center" fill="black">
-                  <!-- <animateTransform 
-                    attributeName="transform"
-                    type="rotate"
-                    from="0" to="160"
-                    dur="15s"
-                    begin=".2s"
-                    fill="freeze"
-                    repeatCount="indefinite"
-                    values="-160; 160; -160"
-                    /> -->
-                </rect>
-
-                <rect width="60" height="60" x="70" y="70"  transform="rotate(0)" transform-origin="center" fill="white">
-                  <!-- <animateTransform 
-                    attributeName="transform"
-                    type="rotate"
-                    from="0" to="140"
-                    dur="15s"
-                    begin=".3s"
-                    fill="freeze"
-                    repeatCount="indefinite"
-                    values="-140; 140; -140"
-                    /> -->
-                </rect>
-
-                <rect width="40" height="40" x="80" y="80"  transform="rotate(0)" transform-origin="center" fill="black">
-                  <!-- <animateTransform 
-                    attributeName="transform"
-                    type="rotate"
-                    from="0" to="120"
-                    dur="15s"
-                    begin=".4s"
-                    fill="freeze"
-                    repeatCount="indefinite"
-                    values="-120; 120; -120"
-                    /> -->
-                </rect>
-
-                <rect width="20" height="20" x="90" y="90"  transform="rotate(0)" transform-origin="center" fill="white">
-                  <!-- <animateTransform 
-                    attributeName="transform"
-                    type="rotate"
-                    from="0" to="100"
-                    dur="15s"
-                    begin=".5s"
-                    fill="freeze"
-                    repeatCount="indefinite"
-                    values="-100; 100; -100"
-                    /> -->
-                </rect>
-
-                <!-- 
-                <rect width="60" height="60" x="50%" y="50%" transform="translate(-30,-30)" fill="red"></rect>
-                <rect width="40" height="40" x="50%" y="50%" transform="translate(-20,-20)" fill="blue"></rect> -->
-
-              </svg>
+      <div class="section contrast" id="contrast">
+        <h3>Contraste</h3>
+        <h4>Cores complementares - RGB</h4>
+        <ul class="colors">
+          <li>
+            <div class="container" style="background-color: green;">
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
             </div>
-          </div>
-          <p class="legend">legenda</p>
-          <!-- <div class="modal">
-            <button class="back">voltar</button>
-            <div class="content">
-              <div class="imagens">
-                <img style="width: calc(50% - 40px)" src="https://i.pinimg.com/564x/0f/55/dc/0f55dc2dfdd307afd31f0ba8c9b65492.jpg" alt="op art" />
-                <img style="width: calc(50% - 40px)" src="https://i.pinimg.com/564x/0f/55/dc/0f55dc2dfdd307afd31f0ba8c9b65492.jpg" alt="op art" />
-                <img style="width: 100%" src="https://i.pinimg.com/564x/0f/55/dc/0f55dc2dfdd307afd31f0ba8c9b65492.jpg" alt="op art" />
-                <img style="width: calc(50% - 40px)" src="https://i.pinimg.com/564x/0f/55/dc/0f55dc2dfdd307afd31f0ba8c9b65492.jpg" alt="op art" />
-                <img style="width: calc(50% - 40px)" src="https://i.pinimg.com/564x/0f/55/dc/0f55dc2dfdd307afd31f0ba8c9b65492.jpg" alt="op art" />
-                <img style="width: 100%" src="https://i.pinimg.com/564x/0f/55/dc/0f55dc2dfdd307afd31f0ba8c9b65492.jpg" alt="op art" />
+            <div class="container" style="background-color: purple;">
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="container" style="background-color: orange;">
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+            </div>
+            <div class="container" style="background-color: green;">
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+              <div class="color" style="background-color: red;"></div>
+              <div class="color" style="background-color: green;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="container" style="background-color: purple;">
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+              <div class="color" style="background-color: yellow;"></div>
+              <div class="color" style="background-color: purple;"></div>
+            </div>
+            <div class="container" style="background-color: orange;">
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+              <div class="color" style="background-color: blue;"></div>
+              <div class="color" style="background-color: orange;"></div>
+            </div>
+          </li>
+        </ul>
+
+        <h4>Contrate mais usado</h4>
+        <ul class="colors black">
+          <li>
+            <div class="container">
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+            </div>
+            <div class="container">
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="container">
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+            </div>
+            <div class="container">
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+              <div class="color" style="border: 3px solid black;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="container">
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+            </div>
+            <div class="container">
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+              <div class="color" style="background-color: white;"></div>
+              <div class="color" style="background-color: black;"></div>
+            </div>
+          </li>
+        </ul>
+        <a href="#shapes" class="btn">formas <span> > </span> </a>
+      </div>
+
+      <div class="section shapes" id="shapes">
+        <h3>Formas</h3>
+        <h4>Geometria básica</h4>
+        <ul class="geometries">
+          <li class="geometry"></li>
+          <li class="geometry"></li>
+          <li class="geometry"></li>
+          <li class="geometry"></li>
+          <li class="geometry"></li>
+          <li class="geometry"></li>
+        </ul>
+        <a href="#draw" class="btn">desenho <span> > </span> </a>
+      </div>
+
+      <div class="section draw" id="draw">
+        <h3>Desenho</h3>
+        <h4>Volume, profundidade e forma</h4>
+        <ul class="itens">
+          <li class="item">
+            <div class="container">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="container">
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+              <div class="square"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="container">
+            <div class="content line line1">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            <div class="content line line2">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            <div class="content line line3">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            <div class="content line line4">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            <div class="content line line5">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            <div class="content line line6">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            <div class="content line line7">
+              <div class="bigcircle bigcircle1"></div>
+              <div class="bigcircle bigcircle2"></div>
+              <div class="bigcircle bigcircle3"></div>
+              <div class="bigcircle bigcircle4"></div>
+              <div class="bigcircle bigcircle5"></div>
+              <div class="bigcircle bigcircle6"></div>
+              <div class="bigcircle bigcircle7"></div>
+            </div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="container cilindros">
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+              <div class="cilindro"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="container losangos">
+              <div class="losangocontainer">
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
               </div>
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="losangocontainer">
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
+                <div class="losango"></div>
               </div>
             </div>
-          </div> -->
-        </li>
+          </li>
 
-        <li>
-          <div class="thumb">
-            <img src="https://i.pinimg.com/564x/f9/50/21/f95021251c9aec2e19b86f44490ab409.jpg" alt="op art" />
-          </div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb">
-            <img src="https://i.pinimg.com/564x/c6/80/b6/c680b68cd518a1b509ea027188f3a8de.jpg" alt="op art" />
-          </div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb"></div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb"></div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb"></div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb"></div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb"></div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-        <li>
-          <div class="thumb"></div>
-          <p class="legend">legenda</p>
-          <div class="modal" style="display: none;"></div>
-        </li>
-      </ul>
+          <li class="item">
+            <div class="op-circles">
+              <div class="moires moires1"></div>
+              <div class="moires moires2"></div>
+            </div>
+          </li>
+        </ul>
+        <a href="#move" class="btn">movimento <span> > </span> </a>
+      </div>
 
+      <div class="section move" id="move">
+        <h3>Movimento</h3>
+        <ul class="grid">
+          <li class="op-circles">
+            <div class="thumb">
+              <div class="circle circle1"></div>
+              <div class="circle circle2"></div>
+            </div>
+          </li>
+          <li>
+            <div class="container">
+              <div index="01" class="color" style="background-color: black;"></div>
+              <div index="02" class="color" style="background-color: white;"></div>
+              <div index="03" class="color" style="background-color: black;"></div>
+              <div index="04" class="color" style="background-color: white;"></div>
+              <div index="05" class="color" style="background-color: black;"></div>
+              <div index="06" class="color" style="background-color: white;"></div>
+              <div index="07" class="color" style="background-color: black;"></div>
+              <div index="08" class="color" style="background-color: white;"></div>
+              <div index="09" class="color" style="background-color: black;"></div>
+              <div index="10" class="color" style="background-color: white;"></div>
+              <div index="11" class="color" style="background-color: black;"></div>
+              <div index="12" class="color" style="background-color: white;"></div>
+              <div index="13" class="color" style="background-color: black;"></div>
+              <div index="14" class="color" style="background-color: white;"></div>
+              <div index="15" class="color" style="background-color: black;"></div>
+              <div index="16" class="color" style="background-color: white;"></div>
+              <div index="17" class="color" style="background-color: black;"></div>
+              <div index="18" class="color" style="background-color: white;"></div>
+              <div index="19" class="color" style="background-color: black;"></div>
+              <div index="20" class="color" style="background-color: white;"></div>
+              <div index="21" class="color" style="background-color: black;"></div>
+              <div index="22" class="color" style="background-color: white;"></div>
+              <div index="23" class="color" style="background-color: black;"></div>
+              <div index="24" class="color" style="background-color: white;"></div>
+              <div index="25" class="color" style="background-color: black;"></div>
+              <div index="26" class="color" style="background-color: white;"></div>
+              <div index="27" class="color" style="background-color: black;"></div>
+              <div index="28" class="color" style="background-color: white;"></div>
+              <div index="29" class="color" style="background-color: black;"></div>
+              <div index="30" class="color" style="background-color: white;"></div>
+              <div index="31" class="color" style="background-color: black;"></div>
+              <div index="32" class="color" style="background-color: white;"></div>
+              <div index="33" class="color" style="background-color: black;"></div>
+              <div index="34" class="color" style="background-color: white;"></div>
+              <div index="35" class="color" style="background-color: black;"></div>
+              <div index="36" class="color" style="background-color: white;"></div>
+              <div index="37" class="color" style="background-color: black;"></div>
+              <div index="38" class="color" style="background-color: white;"></div>
+              <div index="39" class="color" style="background-color: black;"></div>
+              <div index="40" class="color" style="background-color: white;"></div>
+              <div index="41" class="color" style="background-color: black;"></div>
+              <div index="42" class="color" style="background-color: white;"></div>
+              <div index="43" class="color" style="background-color: black;"></div>
+              <div index="44" class="color" style="background-color: white;"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section reference">
+        <h3>Refêrencias</h3>
+        <p>CSS</p>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient()">https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient()</a>
+
+        <p>Libs</p>
+        <a target="_blank" href="https://css-doodle.com/">https://css-doodle.com/</a>
+        <a target="_blank" href="https://p5js.org/">https://p5js.org/</a>
+
+        <p>Onde encontro mais sobre o assunto</p>
+        <a target="_blank" href="https://encontrosdigitais.com.br/">https://encontrosdigitais.com.br/</a>
+      </div>
     </section>
   </div>
-
-  <!-- <div id="mouse"></div> -->
-
   <script type="text/javascript" src="./build/script.js"></script>
 </body>
 </html>
-
-
-

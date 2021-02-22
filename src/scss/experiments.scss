@@ -1,0 +1,41 @@
+#experiments {
+	padding: responsive(20, 40) responsive(20, 40) 0;
+	background-color: $white;
+	.main {
+		h2 {
+			margin: 0 0 30px;
+		}
+		.section {
+			margin: 30px 0;
+			padding: 20px 0;
+			height: 100vh;
+			position: relative;
+			&:last-child {
+				margin: 30px 0 0;
+			}
+			h3 {
+				margin: 0 0 20px;
+			}
+			h4 {
+				font-size: 14px;
+			}
+			.btn {
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				color: $black;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				span {
+					position: relative;
+					top: 2px;
+					display: inline-block;
+					font-size: 20px;
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+}
