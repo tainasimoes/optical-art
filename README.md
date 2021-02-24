@@ -1,6 +1,6 @@
-# Seed HTML
+# Arte Óptical - Construindo Ilusões
 
-Base project to build a single index.html with css and javascript.
+Oficina contruindo para o evento Multivervo 2.0
 
 
 ## Setup
