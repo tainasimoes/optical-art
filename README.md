@@ -2,6 +2,8 @@
 
 Oficina contruindo para o evento Multivervo 2.0
 
+<img src="https://arteoptica-multiverso.netlify.app/assets/images/op.jpg" alt="arte optica"/>
+
 
 ## Setup
 
