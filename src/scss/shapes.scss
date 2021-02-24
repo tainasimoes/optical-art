@@ -3,10 +3,13 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 40px;
-		margin: 20px 0 40px;
+		margin: 40px 0;
+		@media (max-width: 1000px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 		.geometry {
-			width: 200px;
-			height: 200px;
+			width: responsive(100, 240);
+			height: responsive(100, 240);
 			align-self: center;
 			background-color: $black;
 			&:nth-child(2) {
@@ -14,19 +17,19 @@
 			}
 			&:nth-child(3) {
 				border-style: solid;
-				border-width: 0px 100px 200px;
+				border-width: 0px responsive(50, 120) responsive(100, 240);
         border-color: #fff #fff #000;
 			}
 			&:nth-child(4) {
 				border-style: solid;
-				border-width: 0px 0px 200px 200px;
+				border-width: 0px 0px responsive(100, 240) responsive(100, 240);
         border-color: #fff #fff #000 #fff;
 			}
 			&:nth-child(5) {
-				height: 100px;
+				height: responsive(50, 120);
 			}
 			&:nth-child(6) {
-				height: 100px;
+				height: responsive(50, 120);
 				border-radius: 100%;
 			}
 		}

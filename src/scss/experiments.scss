@@ -10,14 +10,19 @@
 			padding: 20px 0;
 			height: 100vh;
 			position: relative;
+			@media (max-width: 1000px) {
+				height: auto;
+			}
 			&:last-child {
 				margin: 30px 0 0;
 			}
 			h3 {
+				font-size: responsive(18, 24);
 				margin: 0 0 20px;
 			}
 			h4 {
 				font-size: 14px;
+				font-size: responsive(14, 20);
 			}
 			.btn {
 				position: absolute;
@@ -28,6 +33,7 @@
 				display: block;
 				margin: 0 auto;
 				text-align: center;
+				font-size: responsive(16, 18);
 				span {
 					position: relative;
 					top: 2px;

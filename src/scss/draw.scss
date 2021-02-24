@@ -1,0 +1,195 @@
+.draw {
+	.itens {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px;
+		margin: 20px 0 40px;
+		@media (max-width: 1000px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 700px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.container {
+				height: 33vh;
+        width: 33vh;
+				position: relative;
+			}
+			.circle {
+				border-radius: 100%;
+				background-color: $black;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				@for $i from 1 through 14 {
+					&:nth-child(#{$i}) {
+						width: calc( 20% + ( #{$i} * 15px ) + 30px );
+						height: calc( 10% + ( #{$i} * 15px ) + 30px );
+						z-index: calc(14 - #{$i});
+					}
+				}
+				&:nth-child(1) { top: 40px; }
+				&:nth-child(2), &:nth-child(3) { top: 30px; }
+				&:nth-child(4) { top: 20px; }
+				&:nth-child(5) { top: 15px; }
+				&:nth-child(odd) {
+					background-color: $white;
+				}
+				@media (max-width: 700px) {
+					@for $i from 1 through 14 {
+						&:nth-child(#{$i}) {
+							width: calc( 20% + ( #{$i} * 15px )  );
+							height: calc( 10% + ( #{$i} * 15px ) );
+							z-index: calc(14 - #{$i});
+						}
+					}
+				}
+			}
+
+			.square {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: #000;
+				@for $i from 1 through 10 {
+					&:nth-child(#{$i}) {
+						width: calc(100% - (#{$i} * 10%));
+						height: calc(100% - (#{$i} * 10%));
+						transform: translate(-50%, -50%) rotate($i * 5deg);
+					}
+				}
+				&:nth-child(even) {
+					background-color: $white;
+				}
+			}
+
+			.line {
+				display: flex;
+				@for $i from 1 through 4 {
+					&:nth-child(#{$i}) {
+						height: calc(0px + (#{$i} * 10%)) 
+					}
+				}
+				@for $i from 5 through 7 {
+					&:nth-child(#{$i}) {
+						height: calc(10% - (#{$i} * 10%)) 
+					}
+				}
+			}
+
+			.bigcircle {
+				background-color: #000;
+				border-radius: 100%;
+				transition: width 1s ease;
+				@for $i from 1 through 4 {
+					&:nth-child(#{$i}) {
+						width: calc(0px + (#{$i} * 10%)) 
+					}
+				}
+				@for $i from 5 through 7 {
+					&:nth-child(#{$i}) {
+						width: calc(10% - (#{$i} * 10%)) 
+					}
+				}
+			}
+
+			.cilindros {
+				position: relative;
+				.cilindro {
+					width: 100%;
+					height: 100%;
+					border-radius: 100%;
+					background-color: #000;
+					position: absolute;
+					&:nth-child(even) {
+						background-color: #fff;
+					}
+					@for $i from 1 through 10 {
+						&:nth-child(#{$i}) {
+							width: calc( 100% - ( #{$i} * 30px ) );
+						  height: calc( 100% - ( #{$i} * 30px ) );
+						  top: calc( 10px + #{$i} * 1% );
+							left: calc( 10px + #{$i} * 1% );
+						}
+					}
+				}
+			}
+
+			.losangos {
+				.losangocontainer {
+					position: relative;
+					overflow: hidden;
+					width: 100%;
+					height: 50%;
+	        top: 2.5px;
+					&:first-child {
+						top: -2.5px;
+						.losango {
+							border: 4px solid #000;
+					    border-top: none;
+							@for $i from 1 through 11 {
+								&:nth-child(#{$i}) {
+									top: calc( 10px + ( #{$i} * (-10px) ) );
+								}
+								&:nth-child(1) {
+									top: 0px;
+								}
+							}
+						}
+					}
+				}
+				.losango {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translate(-50%, 0%);
+					height: 100%;
+					border: 4px solid #000;
+					border-bottom: none;
+					@for $i from 1 through 11 {
+						&:nth-child(#{$i}) {
+							width: calc( 100% - ( #{$i} * 20px ) );
+							top: calc( -10px + ( #{$i} * 10px ) );
+						}
+					}
+					&:nth-child(1) {
+						top: 0px;
+					}
+				}
+			}
+
+			.op-circles {
+				position: relative;
+				width: 100%;
+				height: 33vh;
+				.moires {
+					position: absolute;
+					top: 0;
+					width: 33vh;
+					height: 33vh;
+					border-radius: 100%;
+					background: repeating-radial-gradient(
+						transparent,
+						transparent 4px, 
+						#000 4px, 
+						#000 8px
+					);
+				}
+				.moires1 {
+					left: 0;
+				}
+				.moires2 {
+					right: 0;
+				}
+			}
+		}
+	}
+}

@@ -3,6 +3,9 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		margin: 20px 0 40px;
+		@media (max-width: 1000px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
 		&.black {
 			li {
 				background-color: transparent;
@@ -15,7 +18,10 @@
 			display: grid;
 			grid-template-columns: repeat(2, 16vw);
 			height: 16vw;
-			background-color: antiquewhite;
+			@media (max-width: 1000px) {
+				grid-template-columns: repeat(2, 42vw);
+			  height: 42vw;
+			}
 			.container {
 				width: 100%;
 				height: 100%;
